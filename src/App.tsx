@@ -13,7 +13,7 @@ const Register = lazy(() => import('./pages/Register'))
 
 function App() {
     return (
-        <div className="App">
+        <>
             <Header/>
             <main>
                 <Suspense fallback={Loading()}>
@@ -39,7 +39,7 @@ function App() {
                 </Suspense>
             </main>
             <Footer/>
-        </div>
+        </>
     );
 }
 

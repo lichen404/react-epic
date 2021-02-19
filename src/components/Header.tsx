@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect} from 'react';
 import {NavLink, useHistory} from "react-router-dom"
 import styled from 'styled-components'
 import {Button} from 'antd'
@@ -38,6 +38,9 @@ const Header = observer(() => {
     const handleRegister = () => {
         history.push('/register')
     }
+    useEffect(()=>{
+        UserStore.getUser()
+    },[UserStore])
     return (
         <HeaderWrapper>
             <nav>

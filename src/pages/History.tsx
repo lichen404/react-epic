@@ -1,7 +1,10 @@
+import Table from '../components/Table';
+
 const History = ()=>{
     return (
         <>
-            <h1>History</h1>
+
+            <Table/>
         </>
     )
 }
