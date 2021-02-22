@@ -7,7 +7,17 @@
     min-height: 100vh;
 }
 
-main {
+.mainWrapper {
     flex: 1;
     padding: 30px 100px;
+    background: url("/src/images/home_cover.jpg");
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    max-width: 960px;
+    margin: 0 auto;
+    min-width: 480px;
 }

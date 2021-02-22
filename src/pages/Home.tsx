@@ -1,16 +1,20 @@
 import {observer} from "mobx-react";
-import {useStore} from "../store";
+
 import Uploader from "../components/Uploader";
+import styled from 'styled-components';
 
+const H1 = styled.h1`
+  color: white;
+  font-size: 3em;
+  font-weight: 500;
+  line-height: 120%;
+  text-align: center;
+  margin-bottom: 50px;
+`
 const Home = observer(() => {
-    const {UserStore} = useStore();
-
     return (
         <>
-            {UserStore.currentUser ?
-                <h1>Hello {UserStore.currentUser.attributes.username}</h1>
-                : <span>用户尚未登录</span>
-            }
+            <H1>欢迎上传你的图片</H1>
             <Uploader/>
         </>
     )

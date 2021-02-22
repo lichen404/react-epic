@@ -1,7 +1,7 @@
 import React, {ChangeEvent} from 'react';
 import { useStore } from '../store';
 import { observer, useLocalObservable } from 'mobx-react';
-import { Upload, message,Spin } from 'antd';
+import {Upload, message, Spin, Table} from 'antd';
 import { InboxOutlined } from '@ant-design/icons';
 import styled from 'styled-components';
 
@@ -99,25 +99,26 @@ const Uploader = observer(() => {
 
             {
                 ImageStore.serverFile ? <Result>
-                    <H2>上传结果</H2>
-                    <dl>
-                        <dt>线上地址</dt>
-                        <dd><a target="_blank" href={ImageStore.serverFile.attributes.image.attributes.url} rel="noreferrer">{ ImageStore.serverFile.attributes.image.attributes.url}</a></dd>
-                        <dt>文件名</dt>
-                        <dd>{ImageStore.filename}</dd>
-                        <dt>图片预览</dt>
-                        <dd>
-                            <Image src={ImageStore.serverFile.attributes.image.attributes.url}/>
-                        </dd>
-                        <dt>更多尺寸</dt>
-                        <dd>
-                            <input value={store.width} onChange={bindWidthChange} placeholder="最大宽度（可选）"/>
-                            <input value={store.height} onChange={bindHeightChange} placeholder="最大高度（可选）"/>
-                        </dd>
-                        <dd>
-                            <a  target="_blank" href={store.fullStr} rel="noreferrer">{store.fullStr}</a>
-                        </dd>
-                    </dl>
+                    <Table/>
+                    {/*<H2>上传结果</H2>*/}
+                    {/*<dl>*/}
+                    {/*    <dt>线上地址</dt>*/}
+                    {/*    <dd><a target="_blank" href={ImageStore.serverFile.attributes.image.attributes.url} rel="noreferrer">{ ImageStore.serverFile.attributes.image.attributes.url}</a></dd>*/}
+                    {/*    <dt>文件名</dt>*/}
+                    {/*    <dd>{ImageStore.filename}</dd>*/}
+                    {/*    <dt>图片预览</dt>*/}
+                    {/*    <dd>*/}
+                    {/*        <Image src={ImageStore.serverFile.attributes.image.attributes.url}/>*/}
+                    {/*    </dd>*/}
+                    {/*    <dt>更多尺寸</dt>*/}
+                    {/*    <dd>*/}
+                    {/*        <input value={store.width} onChange={bindWidthChange} placeholder="最大宽度（可选）"/>*/}
+                    {/*        <input value={store.height} onChange={bindHeightChange} placeholder="最大高度（可选）"/>*/}
+                    {/*    </dd>*/}
+                    {/*    <dd>*/}
+                    {/*        <a  target="_blank" href={store.fullStr} rel="noreferrer">{store.fullStr}</a>*/}
+                    {/*    </dd>*/}
+                    {/*</dl>*/}
                 </Result> : null
             }
             </Spin>

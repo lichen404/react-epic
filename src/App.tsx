@@ -15,30 +15,34 @@ function App() {
     return (
         <>
             <Header/>
-            <main>
-                <Suspense fallback={Loading()}>
+            <div className="mainWrapper">
+                <main>
+                    <Suspense fallback={Loading()}>
 
-                    <Switch>
-                        <Route path="/" exact>
-                            <Home/>
-                        </Route>
-                        <Route path="/history">
-                            <History/>
-                        </Route>
-                        <Route path="/about">
-                            <About/>
-                        </Route>
-                        <Route path="/login">
-                            <Login/>
-                        </Route>
-                        <Route path="/register">
-                            <Register/>
-                        </Route>
-                    </Switch>
+                        <Switch>
+                            <Route path="/" exact>
+                                <Home/>
+                            </Route>
+                            <Route path="/history">
+                                <History/>
+                            </Route>
+                            <Route path="/about">
+                                <About/>
+                            </Route>
+                            <Route path="/login">
+                                <Login/>
+                            </Route>
+                            <Route path="/register">
+                                <Register/>
+                            </Route>
+                        </Switch>
 
-                </Suspense>
-            </main>
-            <Footer/>
+                    </Suspense>
+                </main>
+                <Footer/>
+            </div>
+
+
         </>
     );
 }
