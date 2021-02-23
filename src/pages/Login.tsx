@@ -10,6 +10,7 @@ const Wrapper = styled.div`
   box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, .2);
   border-radius: 4px;
   padding: 20px;
+  background: #fff;
 `
 const layout = {
     labelCol: {span: 6},

@@ -1,5 +1,7 @@
 import AV, {User} from 'leancloud-storage';
 
+
+
 AV.init({
     appId: process.env.REACT_APP_ID || '',
     appKey: process.env.REACT_APP_KEY || '',
@@ -53,11 +55,24 @@ const Uploader = {
         const query = new AV.Query('Image');
         query.include('owner');
         query.limit(limit);
-        query.skip((page-1) * limit);
-        query.descending('createdAt')
+        query.skip((page - 1) * limit);
+        query.descending('createdAt');
         query.equalTo('owner', AV.User.current());
         return new Promise((resolve, reject) => {
             query.find().then(result => resolve(result)).catch(error => reject(error));
+        });
+
+    },
+    remove(id: string) {
+        const item = AV.Object.createWithoutData('Image', id);
+        return new Promise((resolve, reject) => {
+            item.destroy().then((result) => {
+                console.log('删除图片');
+                resolve(result);
+
+            }).catch(error => {
+                reject(error);
+            });
         });
 
     }

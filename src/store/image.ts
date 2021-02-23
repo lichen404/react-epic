@@ -20,14 +20,16 @@ class ImageStore {
         this.serverFile = null;
         return new Promise((resolve, reject) => {
             Uploader.add(this.file, this.filename).then(serverFile => {
-                this.serverFile = serverFile;
+                runInAction(() => {
+                    this.serverFile = serverFile;
+                });
                 resolve(serverFile);
             }).catch((error) => {
                 reject(error);
             }).finally(() => {
-                runInAction(()=>{
+                runInAction(() => {
                     this.isUploading = false;
-                })
+                });
 
             });
         });
