@@ -1,46 +1,32 @@
-# Getting Started with Create React App
+# React  EPIC 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 介绍
 
-## Available Scripts
+React Epic 是一个生成图片在线链接的图床工具，用户可以定制图片大小，浏览,管理已上传的图片。本项目的基础是[React 项目实战之 epic 图床](https://xiedaimala.com/courses/ac836073-90be-495d-a9ee-946364d6612a)
 
-In the project directory, you can run:
+## 功能
 
-### `yarn start`
+核心功能包括：注册、登录、上传图片、图片尺寸定制、上传历史展示和删除等。
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 技术栈
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- React
+- styled-components
+- React router
+- TypeScript
+- MobX
+- Antd
+- LeanCloud
 
-### `yarn test`
+## 链接
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[网站预览链接](https://lichen404.github.io/react-epic/#/)
 
-### `yarn build`
+## 版本
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 版本 0.0.1 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- 在原项目基础上使用 TypeScript 开发
+- 使用 useState 替代 useLocalStore（此 API 已过时，推荐使用 useLocalObservable），不使用 useLocalObservable 的[原因](https://mobx.js.org/react-integration.html#you-might-not-need-locally-observable-state)
+-  新增了用户删除图片功能
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
