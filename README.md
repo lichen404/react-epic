@@ -22,6 +22,9 @@ React Epic 是一个生成图片在线链接的图床工具，用户可以定制
 
 [网站预览链接](https://lichen404.github.io/react-epic/#/)
 
+## 笔记
+- [react-epic 笔记](https://lichen404.top/2021/03/01/react-epic-%E7%AC%94%E8%AE%B0/)
+- [mobX 学习笔记](https://lichen404.top/2021/03/01/mobX-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/)
 ## 版本
 
 ### 版本 0.0.1 

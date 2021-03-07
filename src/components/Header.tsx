@@ -20,6 +20,15 @@ const LinkWrapper = styled(NavLink)`
     border-bottom: 1px solid #fff;
   }
 `
+const StyledALink = styled.a`
+  color:#fff;
+  margin-left: 30px;
+  font-size:15px;
+  &.active {
+    border-bottom:1px solid #fff;
+  }
+`
+
 const StyledButton = styled(Button)`
   margin-left: 10px;
 `
@@ -46,7 +55,7 @@ const Header = observer(() => {
             <nav>
                 <LinkWrapper to="/" activeClassName="active" exact>首页</LinkWrapper>
                 <LinkWrapper to="/history" activeClassName="active">上传历史</LinkWrapper>
-                <LinkWrapper to="/about" activeClassName="active">关于</LinkWrapper>
+                <StyledALink href="https://github.com/lichen404/react-epic" target="_blank" rel="noreferrer">Github</StyledALink>
             </nav>
             <ButtonWrapper>
                 {
