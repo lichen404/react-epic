@@ -1,0 +1,40 @@
+{
+  "files": {
+    "static/js/0.395ad239.chunk.js": "./static/js/0.395ad239.chunk.js",
+    "static/js/0.395ad239.chunk.js.map": "./static/js/0.395ad239.chunk.js.map",
+    "static/js/1.11c690dd.chunk.js": "./static/js/1.11c690dd.chunk.js",
+    "static/js/1.11c690dd.chunk.js.map": "./static/js/1.11c690dd.chunk.js.map",
+    "static/js/2.a536fdac.chunk.js": "./static/js/2.a536fdac.chunk.js",
+    "static/js/2.a536fdac.chunk.js.map": "./static/js/2.a536fdac.chunk.js.map",
+    "main.css": "./static/css/main.62a1f800.chunk.css",
+    "main.js": "./static/js/main.3feb6c83.chunk.js",
+    "main.js.map": "./static/js/main.3feb6c83.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.e66ccd53.js",
+    "runtime-main.js.map": "./static/js/runtime-main.e66ccd53.js.map",
+    "static/css/5.4ee63354.chunk.css": "./static/css/5.4ee63354.chunk.css",
+    "static/js/5.050d389c.chunk.js": "./static/js/5.050d389c.chunk.js",
+    "static/js/5.050d389c.chunk.js.map": "./static/js/5.050d389c.chunk.js.map",
+    "static/js/6.0b9cf991.chunk.js": "./static/js/6.0b9cf991.chunk.js",
+    "static/js/6.0b9cf991.chunk.js.map": "./static/js/6.0b9cf991.chunk.js.map",
+    "static/js/7.e3230bee.chunk.js": "./static/js/7.e3230bee.chunk.js",
+    "static/js/7.e3230bee.chunk.js.map": "./static/js/7.e3230bee.chunk.js.map",
+    "static/js/8.8210e26a.chunk.js": "./static/js/8.8210e26a.chunk.js",
+    "static/js/8.8210e26a.chunk.js.map": "./static/js/8.8210e26a.chunk.js.map",
+    "static/js/9.2cc8e054.chunk.js": "./static/js/9.2cc8e054.chunk.js",
+    "static/js/9.2cc8e054.chunk.js.map": "./static/js/9.2cc8e054.chunk.js.map",
+    "static/js/10.5406a2b7.chunk.js": "./static/js/10.5406a2b7.chunk.js",
+    "static/js/10.5406a2b7.chunk.js.map": "./static/js/10.5406a2b7.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/5.4ee63354.chunk.css.map": "./static/css/5.4ee63354.chunk.css.map",
+    "static/css/main.62a1f800.chunk.css.map": "./static/css/main.62a1f800.chunk.css.map",
+    "static/js/5.050d389c.chunk.js.LICENSE.txt": "./static/js/5.050d389c.chunk.js.LICENSE.txt",
+    "static/media/App.css": "./static/media/home_cover.e0a2453a.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e66ccd53.js",
+    "static/css/5.4ee63354.chunk.css",
+    "static/js/5.050d389c.chunk.js",
+    "static/css/main.62a1f800.chunk.css",
+    "static/js/main.3feb6c83.chunk.js"
+  ]
+}
