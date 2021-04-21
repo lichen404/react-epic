@@ -231,7 +231,10 @@ const Image = styled.img`
   max-width: 100px;
 `;
 
-
+const DraggerWrapper = styled.div`
+  max-width: 480px;
+  margin: 0 auto;
+`;
 const Uploader = observer(() => {
     const {ImageStore, UserStore} = useStore();
     const props = {
@@ -266,16 +269,17 @@ const Uploader = observer(() => {
     return (
         <div>
             <Spin tip="上传中" spinning={ImageStore.isUploading}>
-                <Dragger {...props}>
-                    <p className="ant-upload-drag-icon">
-                        <InboxOutlined/>
-                    </p>
-                    <p className="ant-upload-text">点击或拖拽上传图片</p>
-                    <p className="ant-upload-hint">
-                        仅支持 .png/.gif/.jpg/.svg 格式的图片，图片最大 1M
-                    </p>
-                </Dragger>
-
+                <DraggerWrapper>
+                    <Dragger {...props}>
+                        <p className="ant-upload-drag-icon">
+                            <InboxOutlined/>
+                        </p>
+                        <p className="ant-upload-text">点击或拖拽上传图片</p>
+                        <p className="ant-upload-hint">
+                            仅支持 .png/.gif/.jpg/.svg 格式的图片，图片最大 1M
+                        </p>
+                    </Dragger>
+                </DraggerWrapper>
                 {
                     ImageStore.serverFile ? <Result>
                         <EditableTable/>
